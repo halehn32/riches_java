@@ -56,8 +56,9 @@ jobs:
         env:
           FOD_URL: https://ams.fortify.com
           FOD_RELEASE: ${{ secrets.FOD_RELEASE_ID }}
-          FOD_CLIENT_ID: ${{ secrets.FOD_API_KEY }}
-          FOD_CLIENT_SECRET: ${{ secrets.FOD_API_SECRET }}
+          FOD_TENANT: ${{ secrets.FOD_TENANT }}
+          FOD_USER: ${{ secrets.FOD_USER }}
+          FOD_PAT: ${{ secrets.FOD_PAT }}
           EXTRA_PACKAGE_OPTS: -bt none -targs "-cp 'jsplibs/**/*.jar;lib/**/*.jar;WEB-INF/lib/**/*.jar'" -targs "-source 1.8" -targs "-java-build-dir 'WEB-INF/classes'"
           DO_WAIT: true
           DO_EXPORT: true
