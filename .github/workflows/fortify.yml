@@ -59,7 +59,7 @@ jobs:
           FOD_TENANT: ${{ secrets.FOD_TENANT }}
           FOD_USER: ${{ secrets.FOD_USER }}
           FOD_PASSWORD: ${{ secrets.FOD_PAT }}
-          EXTRA_PACKAGE_OPTS: -bt none -targs "-cp 'jsplibs/**/*.jar;lib/**/*.jar;WEB-INF/lib/**/*.jar'" -targs "-source 1.8" -targs "-java-build-dir 'WEB-INF/classes'"
+          EXTRA_PACKAGE_OPTS: -bt none -targs "-cp 'jsplibs/**/*.jar;lib/**/*.jar;WEB-INF/lib/**/*.jar'" -targs "-source 1.8"
           DO_WAIT: true
           DO_EXPORT: true
 
