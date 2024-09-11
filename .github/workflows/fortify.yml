@@ -25,6 +25,9 @@ on:
     branches: [ master ]
   schedule:
     - cron: '28 2 * * 0'
+    
+# pull_request:
+# branches: [ master ] 
 
 jobs:
   FoD-SAST-Scan:
